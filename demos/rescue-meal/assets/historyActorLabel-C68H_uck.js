@@ -1,0 +1,1 @@
+function e(e){return e===`recipe_admin`?`관리자 기록`:e===`guest`?`게스트 기록`:`계정 기록`}export{e as t};

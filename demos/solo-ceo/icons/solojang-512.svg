@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">솔로사장</title>
+  <rect width="512" height="512" rx="112" fill="#2B5B43"/>
+  <path d="M0 400c118-48 250-48 512 0v112H0z" fill="#D9654D" opacity=".9"/>
+  <path d="M355 155c-37-29-83-43-134-43-69 0-115 32-115 83 0 56 48 75 123 93 77 19 120 35 120 86 0 56-48 91-131 91-61 0-112-19-152-59" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="43"/>
+</svg>

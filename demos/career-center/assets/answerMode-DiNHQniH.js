@@ -1,0 +1,1 @@
+const e="cc.answerTyped";function r(){try{return localStorage.getItem(e)==="1"}catch{return!1}}function a(t){try{t?localStorage.setItem(e,"1"):localStorage.removeItem(e)}catch{}}export{r as p,a as s};

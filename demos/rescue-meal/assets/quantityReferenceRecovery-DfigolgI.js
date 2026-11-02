@@ -1,0 +1,1 @@
+import{a as e}from"./index-CuSSHzqX.js";function t(t){let n=t.quantityUnit||e(t.quantity)?.unit;return n&&!/^(g|kg|ml|l|그램|킬로그램|밀리리터|리터)$/i.test(n)?n:null}function n(e){let n=t(e);return n?`${e.name} 1${n}의 양 입력`:`${e.name} 수량 확인`}export{t as n,n as t};

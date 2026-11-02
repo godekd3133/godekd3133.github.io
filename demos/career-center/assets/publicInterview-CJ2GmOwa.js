@@ -1,0 +1,1 @@
+import{fF as e}from"./index-8MwCcy7y.js";function s(n){return e(n)==="공공기관"}const t=["interrupter","quiet","rambler"];function i(n){return t[(n%t.length+t.length)%t.length]}const E=480,a=120,o=40;export{a as D,o as a,E as b,i as d,s as i};

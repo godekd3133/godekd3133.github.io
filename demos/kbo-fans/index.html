@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <base href="/demos/kbo-fans/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="KBO Fans 체험판. 예시 데이터로 동작하며 실제 경기 기록이 아닙니다.">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' data: blob:; media-src 'self'; worker-src 'self' blob:; frame-src 'none'; object-src 'none'; manifest-src 'none'">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="demo-shell.css">
+  <title>KBO Fans 체험판</title>
+  <script src="demo-api.js"></script>
+</head>
+<body>
+  <div id="demo-root">
+    <header id="demo-strip" role="status">
+      <span class="demo-dot" aria-hidden="true"></span>
+      <span id="demo-label">예시 데이터로 체험 중</span>
+      <span class="demo-spacer"></span>
+      <button type="button" id="demo-widget-open" class="demo-link">위젯 미리보기</button>
+      <button type="button" id="demo-reset" class="demo-link">처음부터 다시 하기</button>
+    </header>
+    <div id="demo-stage">
+      <main id="demo-phone">
+        <div id="flutter-host"></div>
+        <div id="boot-splash">
+          <div class="boot-title">KBO Fans</div>
+          <div class="boot-sub">체험판을 준비하는 중입니다</div>
+          <div class="boot-spinner"></div>
+        </div>
+      </main>
+      <aside id="demo-panel" aria-label="iOS 위젯 설명용 미리보기">
+        <button type="button" id="demo-widget-close" class="demo-link">닫기</button>
+        <h1>홈 화면과 잠금 화면에서도</h1>
+        <p class="demo-lead">iOS 앱에는 위젯과 Live Activity가 있습니다. 웹에서는 실행되지 않아, 앱의 예시 라이브 경기로 모습만 재현했습니다.</p>
+        <div class="demo-caption">홈 화면 위젯</div>
+        <div class="w-row">
+          <div class="w-small" id="w-small"></div>
+          <div class="w-medium" id="w-medium"></div>
+        </div>
+        <div class="demo-caption">Live Activity</div>
+        <div class="w-live" id="w-live"></div>
+        <p class="demo-note">설명용 HTML 미리보기입니다. 실제 위젯은 SwiftUI로 구현되어 있습니다.</p>
+      </aside>
+    </div>
+    <div id="demo-toast" role="status" hidden></div>
+  </div>
+  <script src="demo-shell.js"></script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

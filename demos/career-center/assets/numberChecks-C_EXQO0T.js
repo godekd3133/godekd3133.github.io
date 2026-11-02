@@ -1,0 +1,1 @@
+const t="cc.numbers.v1";function e(){try{const r=JSON.parse(localStorage.getItem(t)||"[]");return Array.isArray(r)?r:[]}catch{return[]}}function c(r){try{localStorage.setItem(t,JSON.stringify(r.slice(-60)))}catch{}}export{e as r,c as w};
